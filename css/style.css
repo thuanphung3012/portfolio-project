@@ -56,7 +56,8 @@ margin: 20px 0px 10px 10px;
 } */
 
 #home-tab{
-    margin-left: 2em;
+    display: block;
+    left: 0;
     
 }
 #work-tab{
@@ -100,13 +101,13 @@ margin: 20px 0px 10px 10px;
     padding: 10px;
 }
 
-.info{
+/* .info{
     display: inline-block;
     left: 0px;
-    
+    position: fixed;
     margin: 15px;
     top: 267px;
-}
+} */
 
 td{
     padding-right: 15px;
