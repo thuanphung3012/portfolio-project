@@ -1,21 +1,38 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Portfolio Project</title>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thuan Phung. Graphic Designer/UX Designer. Parsons School of Design.">
+    <meta name="keywords" content="graphic design, ux designer, vietnamese graphic designer, thuan phung, hidden archive, freelance graphic designer, website designer">
+    <link rel="canonical" href="https://thuanphung.com/">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta property="og:sitename" content="Thuan Phung">
+    <meta property="og:image" content=""> <!--Insert image here-->
+    <meta property="og:url" content="https://www.thuanphung.com/">
+    <meta property="og:description" content="Thuan Phung. Graphic Designer/UX Designer. Parsons School of Design.">
+    <title>Thuan Phung</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="navigation">Thuan Phung</div>
+    <div class="topnav" id="myTopnav">
+    <table>
+    <tr>
+        <td><a href="#index.html" class="active" id="home-tab"><h1>Thuan Phung</h1></a></td>
+        <td><a href="#project.html" id="work-tab"><h1>Works</h1></a></td>
+        <td> <a href="#self.html" id="project-tab"><h1>My Projects</h1></a></td>
+        <td> <a href="#poster.html" id="poster-tab"><h1>Posters</h1></a></td>
+        <td> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-plus"></i>
+        </a></td>
+    
+    </tr>
+    </table>
+      </div>
+
     <hr>
-    <div id="project-title"></div>
-    <div id="description"></div>
-
-
-
-
+    <div id="introduction"></div>
+    <hr>
     <script src="airtable.browser.js"></script>
-    <script src="site.js"></script>
+    <script src="homepage.js"></script>
 </body>
-
-
 </html>

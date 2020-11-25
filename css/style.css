@@ -4,34 +4,168 @@ body {
     font-variant: normal;
 }
 
-.navigation {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-size: 40px;
-    padding: 10px;
-    font-weight: 500;
+hr{
+margin: 20px 0px 10px 10px;
 }
 
+
+/* Style navigation bar */
+.topnav{
+    overflow: hidden;
+    background-color: none;
+}
+
+.topnav table{
+    margin: 10px;
+    float: left;
+
+}
+
+.topnav h1{
+    font-size: 18px;
+
+}
+
+.topnav a{
+    text-decoration: none;
+    color: black;
+}
+.topnav a:hover {
+    background-color: none;
+    color: lightgray;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color:none;
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.fa-plus {
+    -webkit-text-stroke: 2px white;
+    margin-top: 10px;
+}
+
+/* table td{
+    display: inline-block;
+    margin-left: 0px;
+} */
+
+#home-tab{
+    margin-left: 2em;
+    
+}
+#work-tab{
+    display: block;
+    margin-left: 5em;
+}
+#project-tab{
+    display: block;
+    margin-left: 5em;
+} 
+
+#poster-tab{
+    display: block;
+    margin-left: 5em;
+}
+
+
+/* Style Home Page */
+#introduction{
+    font-size: 35px;
+    line-height: 37px;
+    margin: 10px;
+}
+
+
+/* Style Project Page */
 #project-title {
-    font-size: 25px;
-    text-align: center;
+    font-size: 18px;
+    text-align: left;
     padding: 10px;
+    font-weight: 700;
+    width: 250px;
+    height: 200px;
+
 }
 
 
 #description {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 23px;
     padding: 10px;
+}
+
+.info{
+    display: inline-block;
+    left: 0px;
     
+    margin: 15px;
+    top: 267px;
 }
-h1{
-    font-size: 40px;
+
+td{
+    padding-right: 15px;
+
+}
+
+
+h2{
+    font-size: 18px;
     padding: 10px;
+    font-weight: 500;
+}
+
+.column-header {
+    float: left;
+    width: 33.3%;
+    left: 0;
+    right: 0;
+
+  }
+
+.media img{
+    width: 100%;
+    margin: 10px 20px 10px 10px;
+}
+
+img{
+    width: 100%;
+    margin: 10px 20px 10px 10px;
 }
 
 
+.row-header2 img{
+    display: flexbox;
+    width: 48%;
+    left: 50%;
+    right: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.table{
+    display: table;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+
+}
+
+.cell{
+    display: table-cell;
+    position: relative;
+    columns: 200px 2;
+}
+
+
+
+
+/* Styleboard.md
 
 .type-heading-1{
     text-transform: uppercase;
@@ -58,7 +192,7 @@ h1{
 }
 
 .color-primary{
-   color: #ffffff; 
+   color: #ffffff;
 }
 
 .color-secondary{
@@ -93,3 +227,4 @@ h1{
 .navigation-item-active:hover{
     color: darkgrey;
 }
+*/
