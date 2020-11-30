@@ -3,7 +3,7 @@ var base = new Airtable({apiKey: 'keywHQ83c6HLp5wgz'}).base('appPNy4mb0GsHqu7L')
 
 base('Portfolio-project').select({
    
-    maxRecords: 5,
+    maxRecords: 2,
     view:"Grid view"
 }).eachPage(function page(records, fetchNextPage) {
     records.forEach(function(record) {

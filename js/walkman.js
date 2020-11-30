@@ -2,15 +2,14 @@ var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keywHQ83c6HLp5wgz'}).base('appPNy4mb0GsHqu7L')
 var media = document.querySelector('.media');
 var rowHeader = document.querySelector('.row-header');
-var rowHeader2 = document.querySelector('.row-header2');
+var rowHeader2b = document.querySelector('.row-header2b');
 var rowHeader3 = document.querySelector('.row-header3');
 
 
 
 
 base('Portfolio-project').select({
-   
-    maxRecords: 2,
+    maxRecords: 3,
     view:"Grid view"
 }).eachPage(function page(records, fetchNextPage) {
     records.forEach(function(record) {
@@ -24,7 +23,7 @@ base('Portfolio-project').select({
         console.log(record);
        
         var image = document.createElement('img');
-        var src = record.fields.Images[0].url;
+        var src = record.fields.Images[11].url;
         image.setAttribute('src', src);
         media.appendChild(image);
         
@@ -40,22 +39,18 @@ base('Portfolio-project').select({
         
 
         var image = document.createElement('img');
-        var src = record.fields.Images[1].url;
+        var src = record.fields.Images[9].url;
         image.setAttribute('src', src);
         rowHeader.appendChild(image);
         
         var image = document.createElement('img');
-        var src = record.fields.Images[2].url;
+        var src = record.fields.Images[10].url;
         image.setAttribute('src', src);
-        rowHeader2.appendChild(image);
+        rowHeader2b.appendChild(image);
+
 
         var image = document.createElement('img');
-        var src = record.fields.Images[3].url;
-        image.setAttribute('src', src);
-        rowHeader2.appendChild(image);
-
-        var image = document.createElement('img');
-        var src = record.fields.Images[4].url;
+        var src = record.fields.Images[8].url;
         image.setAttribute('src', src);
         rowHeader3.appendChild(image);
         
