@@ -8,11 +8,10 @@ var rowHeader3 = document.querySelector('.row-header3');
 
 
 
-base('Portfolio-project').select({
-    maxRecords: 3,
-    view:"Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    records.forEach(function(record) {
+base('Project-page').find('recUUGNnTpWYtytoU', function(err, record) {
+    if (err) { console.error(err); return; }
+    console.log('Retrieved', record.id);
+
         
         var firstValue = document.getElementById("project-title")
         firstValue.innerHTML = record.fields.Title;
@@ -23,7 +22,7 @@ base('Portfolio-project').select({
         console.log(record);
        
         var image = document.createElement('img');
-        var src = record.fields.Images[11].url;
+        var src = record.fields.Images[2].url;
         image.setAttribute('src', src);
         media.appendChild(image);
         
@@ -39,12 +38,12 @@ base('Portfolio-project').select({
         
 
         var image = document.createElement('img');
-        var src = record.fields.Images[9].url;
+        var src = record.fields.Images[0].url;
         image.setAttribute('src', src);
         rowHeader.appendChild(image);
         
         var image = document.createElement('img');
-        var src = record.fields.Images[10].url;
+        var src = record.fields.Images[1].url;
         image.setAttribute('src', src);
         rowHeader2b.appendChild(image);
 
@@ -54,15 +53,12 @@ base('Portfolio-project').select({
         image.setAttribute('src', src);
         rowHeader3.appendChild(image);
         
-    },
+    });
 
 
     
 
 
-fetchNextPage()
-    ); function done(err) {
-    if (err) {console.error(err); return;}
-};
-    })
+
+    
    

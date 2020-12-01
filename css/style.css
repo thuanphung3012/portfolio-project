@@ -10,50 +10,56 @@ margin: 20px 0px 10px 10px;
 
 
 /* Style navigation bar */
-.topnav{
+.topnav {
     overflow: hidden;
     background-color: none;
-}
-
-.topnav table{
-    margin: 10px;
+  }
+  
+  .topnav a {
     float: left;
-
-}
-
-.topnav h1{
-    font-size: 18px;
-
-}
-
-.topnav a{
-    text-decoration: none;
+    display: block;
     color: black;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    text-decoration: none; 
+    margin-bottom: -10px;
 }
+  
+.topnav a h1{ 
+      
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; font-style: medium; font-variant: normal; font-weight: 450; line-height: 40px;
+  }
+  
+  
+  
 .topnav a:hover {
     background-color: none;
     color: lightgray;
     text-decoration: none;
-}
-
-.topnav a.active {
+  }
+  
+  .topnav a.active {
     background-color:none;
     color: black;
-}
-
-.topnav .icon {
+  }
+  
+  .topnav .icon {
     display: none;
-}
-
-.fa-plus {
-    -webkit-text-stroke: 2px white;
+  }
+  
+  .fa-plus {
+    -webkit-text-stroke: 4px white;
     margin-top: 10px;
-}
+    
+  }
 
-/* table td{
-    display: inline-block;
-    margin-left: 0px;
-} */
+a,a:visited, a:link, a:active{
+    color:black;
+    text-decoration:none;
+    }
+
+
 
 #home-tab{
     display: block;
@@ -61,16 +67,16 @@ margin: 20px 0px 10px 10px;
     
 }
 #work-tab{
-    display: block;
+    
     margin-left: 5em;
 }
 #project-tab{
-    display: block;
+  
     margin-left: 5em;
 } 
 
 #poster-tab{
-    display: block;
+  
     margin-left: 5em;
 }
 
@@ -173,7 +179,81 @@ img{
 }
 
 
+/* Responsive */
+@media screen and (max-width: 645px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon{
+    float: right;
+    display: block;
+    font-size: 30px;
+    margin-right: 10px;
 
+}
+
+.add{
+    display: block;
+    transition: all .3s ease-in-out;
+    background-color: black;
+    border: 0.5px solid black;
+    height: 3px;
+    margin-left: -1px ;
+}
+
+    
+.icon-plus{
+    background-color: black;
+    border: 1.5px solid black;
+    font-size: 15px;
+    margin: 8px;    
+}
+
+.plus{
+    background: white;
+    transition: all .4s ease-in-out;
+}
+    
+.rotate{
+    transform: rotate(45deg);
+}
+
+li{
+    float: left;
+    line-height: 1px;
+    width: 20px;
+    margin-top: 20px; 
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+
+#work-tab{
+    margin-left: 0;
+}
+#project-tab{
+    margin-left: 0;
+}  
+#poster-tab{
+    margin-left: 0em;
+}
+}
+  
+@media screen and (max-width: 645px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+   
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;  
+}
+}
 
 /* Styleboard.md
 
