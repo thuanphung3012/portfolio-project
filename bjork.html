@@ -15,9 +15,9 @@
 <body>
     <div class="topnav" id="myTopnav">
         <a href="index.html" class="active"><h1>Thuan Phung</h1></a>
-        <a href="project.html" id="work-tab" ><h1>Works</h1></a>
-        <a href="self.html" id="project-tab"><h1>My Projects</h1></a>
-        <a href="poster.html" id="poster-tab"><h1>Posters</h1></a>
+        <a href="#" id="work-tab" ><h1>Works</h1></a>
+        <a href="project.html" id="project-tab"><h1>My Projects</h1></a>
+        <a href="#" id="poster-tab"><h1>Posters</h1></a>
         <ul><a href="javascript:void(0);" class="icon" onclick="topNav()"><li class="plus"><span class="add"><i class="icon-plus"></i></span></li></a> </ul>
     </div>
     <hr>
@@ -75,9 +75,15 @@
         </div>
     </div>
     
+    <input type="button" id="b1" value="←" onclick="location.href='walkman.html'"style="outline:none">
+      
+    <input type="button" id="b2" value="→" onclick="location.href='MTA.html'"style="outline:none">
+    
+    <button onclick="topFunction()" id="myBtn">↑</button>
 
     <script src="js/airtable.browser.js"></script>
     <script src="js/bjork.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 

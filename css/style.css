@@ -1,11 +1,12 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: normal;
+    font-style: medium;
     font-variant: normal;
 }
 
 hr{
-margin: 20px 0px 10px 10px;
+margin: 20px 10px 10px 10px;
+background-color: black;
 }
 
 
@@ -27,8 +28,12 @@ margin: 20px 0px 10px 10px;
 }
   
 .topnav a h1{ 
-      
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 20px; font-style: medium; font-variant: normal; font-weight: 450; line-height: 40px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 20px; 
+    font-style: medium; 
+    font-variant: normal;
+    font-weight: 400; 
+    line-height: 40px;
   }
   
   
@@ -68,16 +73,16 @@ a,a:visited, a:link, a:active{
 }
 #work-tab{
     
-    margin-left: 5em;
+    margin-left: 12em;
 }
 #project-tab{
   
-    margin-left: 5em;
+    margin-left: 12em;
 } 
 
 #poster-tab{
   
-    margin-left: 5em;
+    margin-left: 12em;
 }
 
 
@@ -117,11 +122,21 @@ a,a:visited, a:link, a:active{
 
 td{
     padding-right: 15px;
-
 }
 
 
-h2{
+.row-header h2 {
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+}
+.row-header2b h2{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.row-header3 h2{
     font-size: 18px;
     padding: 10px;
     font-weight: 500;
@@ -179,24 +194,102 @@ img{
 }
 
 
+/* Project.html -> Top bar */
+.topbar table{
+    display: block;
+    margin: 20px 0px 10px 10px;
+}
+
+.topbar h1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 20px; 
+    font-style: medium; 
+    font-variant: normal;
+    font-weight: 400; 
+    line-height: 40px;
+    margin-top: 20px;
+}
+#row-content{
+    margin-top: 50px;
+}
+
+.hover_img{
+    padding-bottom: 10em;
+}
+.hover_img:hover td{
+    color: lightgray; 
+}
+
+.hover_img td{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 20px; 
+    font-style: medium; 
+    font-variant: normal;
+    font-weight: 400; 
+    line-height: 20px;
+}
+
+.hover_img a { position: relative;}
+
+.hover_img a span { position:absolute; display:none; padding-left: 50em;}
+.hover_img a:hover span { display:block; margin: 10px; }
+
+
+
+
+/* Forward - Backward button */
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    background-color: none;
+  padding: 10;
+  }
+input:hover{  color: lightgray;}
+#b1{font-size: 30px; background-color: white;float: left;}
+#b2 {font-size: 30px;background-color: white;float: right;}
+
+#myBtn {
+    background-color: transparent;
+    display: none;
+    position: fixed;
+    top:93.5%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 30px;
+  }
+  
+  #myBtn:hover {
+    background-color: none;  color: lightgray;
+  }
 /* Responsive */
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 1072px) {
 .topnav a:not(:first-child) {display: none;}
 .topnav a.icon{
     float: right;
     display: block;
-    font-size: 30px;
-    margin-right: 10px;
+    font-size: 0px;
+    margin-right: 20px;
 
 }
 
 .add{
     display: block;
-    transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
     background-color: black;
     border: 0.5px solid black;
     height: 3px;
-    margin-left: -1px ;
+    margin-left: 3px ;
+    
 }
 
     
@@ -204,12 +297,13 @@ img{
     background-color: black;
     border: 1.5px solid black;
     font-size: 15px;
-    margin: 8px;    
+    margin: 8px;  
 }
 
 .plus{
     background: white;
     transition: all .4s ease-in-out;
+    width: 25px; 
 }
     
 .rotate{
@@ -240,13 +334,14 @@ ul{
 }
 }
   
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 1072px) {
 .topnav.responsive {position: relative;}
 .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
 }
+
    
 .topnav.responsive a {
     float: none;

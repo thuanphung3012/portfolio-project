@@ -2,8 +2,9 @@ var Airtable = require('airtable');
 var base = new Airtable({apiKey: 'keywHQ83c6HLp5wgz'}).base('appPNy4mb0GsHqu7L')
 var media = document.querySelector('.media');
 var rowHeader = document.querySelector('.row-header');
+var rowHeader2 = document.querySelector('.row-header2');
 var rowHeader2b = document.querySelector('.row-header2b');
-var rowHeader3 = document.querySelector('.row-header3');
+
 
 
 
@@ -49,9 +50,24 @@ base('Project-page').find('recUUGNnTpWYtytoU', function(err, record) {
 
 
         var image = document.createElement('img');
-        var src = record.fields.Images[8].url;
+        var src = record.fields.Images[3].url;
         image.setAttribute('src', src);
-        rowHeader3.appendChild(image);
+        rowHeader2.appendChild(image);
+
+        var image = document.createElement('img');
+        var src = record.fields.Images[4].url;
+        image.setAttribute('src', src);
+        rowHeader2.appendChild(image);
+
+        var image = document.createElement('img');
+        var src = record.fields.Images[5].url;
+        image.setAttribute('src', src);
+        rowHeader2.appendChild(image);
+
+        var image = document.createElement('img');
+        var src = record.fields.Images[6].url;
+        image.setAttribute('src', src);
+        rowHeader2.appendChild(image);
         
     });
 
