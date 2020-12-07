@@ -271,6 +271,102 @@ input:hover{  color: lightgray;}
   #myBtn:hover {
     background-color: none;  color: lightgray;
   }
+
+/* Button Click on homepage*/
+button {
+    color: black;
+    background: none;
+    padding-top: 5px;
+    height: 50px;
+    font-size: 15px;
+    border: 1px solid black;
+    
+  }
+  .collapsible {
+    position: relative;
+    background-color: none;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+    bottom: 20px;
+    width: 9em;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 25px;
+    
+    
+    
+
+}
+
+  .collapsible-text{
+      font-size: 25px;
+     
+}
+
+
+
+.active2, .collapsible:active {
+  background-color: black;
+  color: lightgrey;
+  
+}
+
+.collapsible:after {
+  color: black;
+  font-weight: bold;
+  float: left;
+  margin-left: 0px;
+  
+}
+
+
+
+
+.content {
+    display: inline-block;
+  padding-top: 5px;
+  max-height: 120px;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background-color: transparent;
+  margin-left: 20em;
+  text-transform: uppercase;
+} 
+.row-contain2 {
+    width: 400px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 50px;
+    text-align: right;
+    line-height: 15px;
+    padding-top: 7px;
+}
+.row-contain3 {
+    width: 400px;
+    display: block;
+    right: 0;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 50px;
+    text-align: right;
+    line-height: 15px;
+    padding-top: 7px;
+}
+.title p{
+    padding-right: 10px;
+    display: block;
+    font-size: 20px;
+    width: 140px;
+    font-weight: 500;
+}
+
+.row{
+    margin-top: 20px;
+}
+
+
+  
 /* Responsive */
 @media screen and (max-width: 1072px) {
 .topnav a:not(:first-child) {display: none;}
@@ -349,6 +445,7 @@ ul{
     text-align: left;  
 }
 }
+
 
 /* Styleboard.md
 
