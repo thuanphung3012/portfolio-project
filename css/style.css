@@ -361,15 +361,11 @@ button {
     color: black;
     cursor: pointer;
     margin-left: 10px;
-    bottom: 20px;
+    bottom: 30px;
     width: 9em;
     border-radius: 12px;
     text-align: center;
     font-size: 25px;
-    
-    
-    
-
 }
 
   .collapsible-text{
@@ -404,7 +400,7 @@ button {
   transition: max-height 0.4s ease-out;
   background-color: transparent;
   margin-left: 20em;
-  text-transform: uppercase;
+  
 } 
 .row-contain2 {
     width: 400px;
@@ -430,8 +426,13 @@ button {
     padding-right: 10px;
     display: block;
     font-size: 20px;
-    width: 140px;
-    font-weight: 500;
+    width: 660px;
+    font-weight: 500;  
+}
+
+.title a:hover{
+    color: lightgray;
+    text-decoration: none;
 }
 
 .row{
