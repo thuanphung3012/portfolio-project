@@ -4,6 +4,8 @@ body {
     font-variant: normal;
 }
 
+
+
 hr{
 margin: 20px 10px 10px 10px;
 background-color: black;
@@ -91,7 +93,56 @@ a,a:visited, a:link, a:active{
     font-size: 35px;
     line-height: 37px;
     margin: 10px;
+    width: 95%;
 }
+/* [Homepage] Sidetab 
+.slide-out-div {
+    margin-left: 10px;
+    width: 350px;
+    background: white;
+    border: 1px solid black;
+    height: 100%;
+}
+*/
+
+#box {
+    overflow-y: auto;
+    overflow-x: hidden;
+    white-space: nowrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    vertical-align: text-top;
+    margin-left: -45px;
+    clear: both;
+    cursor: url("arrow-left.png"),pointer;
+    
+}
+.index-image {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    text-align: center; 
+}
+.index-image2 {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    text-align: center; 
+}
+.index-image3 {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    text-align: center; 
+}
+.index-image4 {
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    text-align: center; 
+}
+#box img
+{width: 400;padding-right: 45px;padding-left: 45px;}
 
 
 /* Style Project Page */
@@ -124,7 +175,15 @@ td{
     padding-right: 15px;
 }
 
-
+.recently h3{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 20px; 
+    font-style: medium; 
+    font-variant: normal;
+    font-weight: 400; 
+    line-height: 40px;
+    margin: 10px;
+}
 .row-header h2 {
     font-size: 18px;
     padding: 10px;
@@ -136,6 +195,11 @@ td{
     font-weight: 500;
 }
 
+.row-header2 h2{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 500;
+}
 .row-header3 h2{
     font-size: 18px;
     padding: 10px;
@@ -149,6 +213,14 @@ td{
     right: 0;
 
   }
+
+.media{
+    margin-right:20px;
+}
+
+.row-header img{
+    padding-right: 20px;
+}
 
 .media img{
     width: 100%;
@@ -209,6 +281,7 @@ img{
     line-height: 40px;
     margin-top: 20px;
 }
+
 #row-content{
     margin-top: 50px;
 }
@@ -244,7 +317,7 @@ input {
     border-left-style: hidden;
     border-bottom-style: hidden;
     background-color: none;
-  padding: 10;
+    padding: 10;
   }
 input:hover{  color: lightgray;}
 #b1{font-size: 30px; background-color: white;float: left;}
