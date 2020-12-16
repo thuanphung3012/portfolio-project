@@ -1,0 +1,14 @@
+Fei’s comments
+
+MC: Some form of intelligence with emotional capacity might be interesting for intake into medical systems; perhaps the entry point into the larger system. If you were to continue this project, it would be good to speak to a medical design researcher about issues with intake
+
+I think this is a really strong concept considering a lot of medical practices are shifting to telemedicine, I definitely see AI being the next step in urgent care. Your chat bot looks pretty well developed (using keywords im guessing?) and i’m excited to see the next iteration. I think the design is really clean but it needs a bit more color for the interface to be more inviting and usable - arielle 
+
+^ Would love to see this paired with a physical manifestation of the AI..its a great opportunity to expand medical assitances…
+
+Where is the text on your homepage from? It sounds very "sci-fi" and doesn't sound like what a medical service would say to you. "Express and witness"
+
+Chatbot feature is really small - can't see what you're typing. Try looking at how Quartz previous Messenger was designed: the input isn't freeform text, its more like a multiple choice: https://www.adweek.com/digital/quartzs-new-chatbot-is-bringing-conversational-news-to-facebook-messenger/. At the same time, it's SO easy to misdiagnose people and group their symptoms into buckets that aren't very productive.
+
+For the presentation, spend time showing your prototype more than giving the long written description, because your prototype will feature a lot of that already.
+

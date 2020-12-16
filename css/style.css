@@ -26,7 +26,19 @@ hr {
   margin-bottom: -10px;
 }
 
-.topnav a h1 {
+#bottom-nav{
+float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+
+.topnav a h1, #bottom-nav h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-style: medium;
@@ -35,16 +47,18 @@ hr {
   line-height: 40px;
 }
 
-.topnav a:hover {
+.topnav a:hover, #bottom-nav a:hover {
   background-color: none;
   color: lightgray;
   text-decoration: none;
 }
 
-.topnav a.active {
+.topnav a.active, #bottom-nav a:active {
   background-color: none;
   color: black;
 }
+
+
 
 .topnav .icon {
   display: none;
@@ -184,6 +198,9 @@ td {
   font-weight: 500;
 }
 
+
+
+
 .row-header2 h2 {
   font-size: 18px;
   padding: 10px;
@@ -236,7 +253,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 48%;
+  width: 38%;
 }
 
 .table {
@@ -432,6 +449,91 @@ button {
   margin-top: 20px;
 }
 
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* Poster page */
+.page-wrapper {
+  margin-left: 0px;
+  background-color: none;
+    margin-right: 0px;
+    margin-bottom: 30px;
+}
+
+.column-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left-column {
+  height: auto;
+    margin-left: 50px;
+    padding-left: 20px;
+    padding-top: 35px;
+    margin-top: -10px;
+}
+
+.left-column img{
+  width: 75%;
+}
+
+
+
+.right-column {
+    margin-right: 20px;
+    margin-left: 20px;
+    width:auto;
+    margin-top: 5px;
+}
+
+.right-column h3{
+  font-size: 16px;
+  padding: 27px;
+}
+
+ #switch #bw {
+     display: none;
+ }
+ #switch.playing #bw {
+     display: block;
+ }
+ #switch.playing #color {
+     display: none;
+ }
+
+
 /* Responsive */
 @media screen and (max-width: 1072px) {
   .topnav a:not(:first-child) {
@@ -494,6 +596,7 @@ button {
   }
 }
 
+.sketchfab-embed-wrapper iframe{width: 100%;height: 700px; margin: 20px;}
 @media screen and (max-width: 1072px) {
   .topnav.responsive {
     position: relative;

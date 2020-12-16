@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+Medical AI
+    </title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <ul>
+    <div class="topnav">
+        <li><a class="logo" href="index-lab.html"><img src="assets/logo.svg" alt=""></a></li>
+        <li><a class="right-nav" href="#Medicine">Medicine</a></li>
+        <li><a class="right-nav" href="#chat" style="color: #181818;">Account</a></li>
+    </div>
+</ul>
+<footer>
+<h1></h1>
+
+</footer>
+<div id="container-chat" class="container-chat">
+    <div id="chat" class="chat"type="text">
+        <div id="messages" class="messages" ></div>
+        <input id="input" type="text" placeholder="Let's get you feeling better. Say hi so we know you are ready." autocomplete="off" autofocus="true" />
+       
+    
+     <div class="button-small">
+        <div class="inner"><button class="btn"><i class="fa fa-phone-square" style="color: cornflowerblue;"></i></button></div>
+        <div class="inner"><button class="btn"><i class="fa fa-paperclip"style="color: cornflowerblue"></i></button></div>
+        <div class="inner"><button class="btn"><i class="fa fa-camera" style="color: cornflowerblue"></i></button></div>
+        <div class="inner"><button class="btn"><i class="fa fa-map-marker" style="color: cornflowerblue"></i></button></div>
+    </div>
+     <!--<img src="bot.png" alt="Robot cartoon" height="500vh">-->
+</div>
+
+<div class="record">
+    <h1>Patient: #012521</h1><br>
+    <h1>Name</h1> <p>Thuan Phung</p>
+    <h1>Email</h1><p>thuanphung3012@gmail.com</p>
+    <button id="record-btn">Provider</button>
+    <button id="big-recordbtn"><button id="record-btn-small">Add record</button><p style="margin: -40px 20px 20px 25px;">or drag and drop here</p></button>
+</div>
+<div id="container-heartrate">
+    <div id="tapper" class="hits">
+      <div id="heart"><i class="fa fa-heart"></i></div>
+      <div class="text-beat">Start pressing any key or tapping here along with your heartbeat</div>
+    </div>
+    <div id="milliseconds" class="hits">Seconds:
+      <span id="millisecondNum">0</span>
+    </div>
+    <div id="bps" class="hits">Heartrate:
+      <span id="bpsNum">0</span> bpm
+    </div>
+    <button id="stop"><h1>Stop</h1></button>
+    <button id="reset"><h1>Reset</h1></button>
+  </div>
+</body>
+
+<script type="text/javascript" src="js/chatbot.js"></script>
+<script type="text/javascript" src="js/constants.js"></script>
+<!--<script type="text/javascript" src="js/speech.js"></script>-->
+</html>

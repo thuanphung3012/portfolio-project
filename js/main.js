@@ -133,6 +133,12 @@ $(document).ready(function() {
   $('#box').hScroll(60); // You can pass (optionally) scrolling amount
 });
 
+
+function changeColor() {}
+
+function changeImage(obj) {
+    obj.classList.toggle('playing');
+}
 // // Side tab
 // (function ($) {
 //   $.fn.tabSlideOut = function (callerSettings) {
