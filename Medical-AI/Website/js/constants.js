@@ -167,7 +167,7 @@ const prompts = [
     
     // 16th reply
     [
-      "Alright Thuan. Would you like to do anything else? Thank you for chatting with us. See you soon, the doctor will check-in with you in shortly if we find any critical problem."
+      "Alright Thuan. Would you like to do anything else?"
     ],
     
      // 17th reply
