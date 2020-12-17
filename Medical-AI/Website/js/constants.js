@@ -84,7 +84,7 @@ const prompts = [
     ["I'm ok", "I will check it by myself", "I can order by myself" ],
 
     // 17th ask
-    ["No, that's all for today" ],
+    ["Thank you bye bye" ],
 ]
   // Possible responses, in corresponding order
   
@@ -167,7 +167,7 @@ const prompts = [
     
     // 16th reply
     [
-      "Alright Thuan. Would you like to do anything else?"
+      "Alright Thuan. Would you like to do anything else? Thank you for chatting with us. See you soon, the doctor will check-in with you in shortly if we find any critical problem."
     ],
     
      // 17th reply

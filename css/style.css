@@ -677,3 +677,14 @@ button {
     color: darkgrey;
 }
 */
+
+
+/* p5 js */
+canvas {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin: auto;
+  
+}

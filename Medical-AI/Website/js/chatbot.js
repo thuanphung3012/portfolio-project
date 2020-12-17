@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Search for exact match in `prompts`
       product = compare(prompts, replies, text);
     } else if (text.match(/thank/gi)) {
-      product = "You're welcome!"
+      product = "Thank you for chatting with us. See you soon, the doctor will check-in with you in shortly if we find any critical problem."
     } else if (text.match(/(corona|covid|virus)/gi)) {
       // If no match, check if message contains `coronavirus`
       product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
