@@ -159,11 +159,24 @@ a:active {
   width: 250px;
   height: 200px;
 }
-
+#project-title-code h1{
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+  font-weight: 700;
+  width: 300px;
+}
 #description {
   font-size: 18px;
   line-height: 23px;
   padding: 10px;
+}
+#description-code p{
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 10px;
+  margin-right: 20px;
+  justify-content: left;
 }
 
 /* .info{
@@ -684,7 +697,8 @@ canvas {
   display: block;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  margin: auto;
-  
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
